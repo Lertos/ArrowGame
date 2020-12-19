@@ -1,0 +1,106 @@
+﻿.labelNextLine{
+    display: block;
+}
+
+img {
+    width: 128px;
+    height: 128px;
+    margin: 8px;
+}
+
+.imgShadow {
+    box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.3);
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    border-radius: 2em;
+}
+
+.buttonEasy {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    border-radius: 2em;
+}
+
+.buttonMedium {
+    background-color: rgb(211, 134, 19); /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    border-radius: 2em;
+}
+
+.buttonHard {
+    background-color: rgb(190, 0, 0); /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    border-radius: 2em;
+}
+
+#outerDiv {
+    width: 100%; 
+    text-align: center;
+    }
+
+.topInformation{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'Indie Flower', cursive;   
+}
+
+.bottomInformationCorrect{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Indie Flower', cursive; 
+    text-shadow: 0 0 4px rgb(27, 180, 47);
+}
+
+.bottomInformationIncorrect{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Indie Flower', cursive; 
+    text-shadow: 0 0 4px rgb(180, 27, 27);
+}
+
+#divTopInformation{
+    border: 7px groove rgba(126, 21, 136, 0.678);
+    border-radius: 28px;
+    background-color: rgb(229, 174, 255);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-right: 30%;
+    margin-left: 30%;
+}

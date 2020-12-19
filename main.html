@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' type='text/css' href='CSS/stylesheet.css'>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+
+    <meta charset='utf-8' />
+    <title>Arrow Game</title>
+
+    <script type='text/javascript' src='JS/functions.js'></script>
+</head>
+<body>  
+
+    <audio id="audioClick">
+        <source src="Audio/click.wav" type="audio/wav">
+    </audio>
+
+    <div id='outerDiv'>
+        <div id='divTopInformation'>
+            <span class='labelNextLine'>
+                <label class='topInformation'>
+                    Points: 
+                </label>
+                <label id='labelPoints' class='topInformation'>
+                    0
+                </label>
+            </span>
+
+            <span class='labelNextLine'>
+                <label class='topInformation'>
+                    Remaining: 
+                </label>
+                <label id='labelRemaining' class='topInformation'>
+                    0
+                </label>
+            </span>           
+        </div>
+
+        <div id='divButtons' style='display:none'>
+            <div id='divTopButton'>
+                <img src='Images/blank.png' name='redSquare'>
+                <img src='Images/blank.png' id='imgUpArrow'>
+                <img src='Images/blank.png' name='redSquare'>
+            </div>
+
+            <div id='divSideButtons'>
+                <img src='Images/blank.png' id='imgLeftArrow'>
+                <img src='Images/blank.png' id='countDownImg' name='redSquare'>
+                <img src='Images/blank.png' id='imgRightArrow'>
+            </div>
+
+            <div id='divDownButton'>
+                <img src='Images/blank.png' name='redSquare'>
+                <img src='Images/blank.png' id='imgDownArrow'>
+                <img src='Images/blank.png' name='redSquare'>
+            </div>
+
+            <div>
+                <button id='btnRestart' class='button' onclick='gameOver()'>
+                    Restart
+                </button>
+            </div>
+        </div>
+
+        <div id='divStartButton'>
+            <button id='btnStart' class='button' onclick='chooseDifficulty()'>
+                Start
+            </button>
+            <span class='labelNextLine'>
+                <label class='bottomInformationCorrect'>
+                    Correct: 
+                </label>
+                <label id='labelCorrect' class='bottomInformationCorrect'>
+                    0
+                </label>
+            </span>
+            <span class='labelNextLine'>
+                <label class='bottomInformationIncorrect'>
+                    Incorrect: 
+                </label>
+                <label id='labelIncorrect' class='bottomInformationIncorrect'>
+                    0
+                </label>
+            </span>
+        </div>
+
+        <div id='divDifficulty' style='display:none'>
+            <button id='btnStart' class='buttonEasy' onclick='startGame("easy")'>
+                Easy
+            </button>
+            <button id='btnStart' class='buttonMedium' onclick='startGame("medium")'>
+                Medium
+            </button>
+            <button id='btnStart' class='buttonHard' onclick='startGame("hard")'>
+                Hard
+            </button>
+        </div>
+    </div>
+</body>
+</html>
